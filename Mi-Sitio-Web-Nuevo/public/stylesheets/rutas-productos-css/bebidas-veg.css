@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.productos-bebidas-veg{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bebidas-veg  h2{
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    text-shadow: 3px 3px 1px rgb(233, 128, 42);
+    letter-spacing: 10px;
+    color: #000;
+}
+
+.contenedor-bebidas-veg {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+
+.bebida-almendras img{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin-right: 50px;
+}
+
+.bebida-almendras h3{
+    font-size: 20px;
+    text-align: center;
+    margin-right: 50px;
+    color: rgb(233, 128, 42);
+}
+
+.bebida-almendras h4{
+    font-size: 16px;
+    text-align: center;
+    margin-right: 50px;
+    color:#000;
+}
+
+
+.bebida-nueces img{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.bebida-nueces h3{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(233, 128, 42);
+}
+
+.bebida-nueces h4{
+    font-size: 16px;
+    text-align: center;
+    color:#000;
+}

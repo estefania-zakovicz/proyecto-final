@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.productos-frutos{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.frutos-secos h2{
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    text-shadow: 3px 3px 1px rgb(233, 128, 42);
+    letter-spacing: 10px;
+    color: #000;
+}
+
+.contenedor-frutos-secos {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.nueces img{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.nueces h3{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(233, 128, 42);
+}
+
+.nueces h4{
+    font-size: 16px;
+    text-align: center;
+    color:#000;
+}
+
+
+.almendras img{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.almendras h3{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(233, 128, 42);
+}
+
+.almendras h4{
+    font-size: 16px;
+    text-align: center;
+    color:#000;
+}
+
+
+.anacardos img{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.anacardos h3{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(233, 128, 42);
+}
+
+.anacardos h4{
+    font-size: 16px;
+    text-align: center;
+    color:#000;
+}
+
+
+.mani img{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.mani h3{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(233, 128, 42);
+}
+
+.mani h4{
+    font-size: 16px;
+    text-align: center;
+    color:#000;
+}

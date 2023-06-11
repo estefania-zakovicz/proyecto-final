@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.productos-harinas{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.harinas h2{
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    text-shadow: 3px 3px 1px rgb(233, 128, 42);
+    letter-spacing: 10px;
+    color: #000;
+}
+
+.contenedor-harinas {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.harina-trigo img{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.harina-trigo h3{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(233, 128, 42);
+}
+
+.harina-trigo h4{
+    font-size: 16px;
+    text-align: center;
+    color:#000;
+}
+
+.harina-almendras img{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.harina-almendras h3{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(233, 128, 42);
+}
+
+.harina-almendras h4{
+    font-size: 16px;
+    text-align: center;
+    color:#000;
+}
+
+
+.harina-garbanzos img{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.harina-garbanzos h3{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(233, 128, 42);
+}
+
+.harina-garbanzos h4{
+    font-size: 16px;
+    text-align: center;
+    color:#000;
+}
+
+
+.harina-arroz img{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.harina-arroz h3{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(233, 128, 42);
+}
+
+.harina-arroz h4{
+    font-size: 16px;
+    text-align: center;
+    color:#000;
+}
