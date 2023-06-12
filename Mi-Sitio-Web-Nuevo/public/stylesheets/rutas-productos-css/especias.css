@@ -5,26 +5,17 @@
     font-family: "Poppins", sans-serif;
 }
 
-.productos-especias{
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    padding: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.especias h2{
+.productos-especias {
     width: 100%;
     height: 10vh;
-    margin-bottom: 5px;
+    padding: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+}
+
+.especias h2 {
+    margin-top: 40px;
     font-size: 60px;
     text-shadow: 3px 3px 1px rgb(233, 128, 42);
     letter-spacing: 10px;
@@ -33,86 +24,33 @@
 
 .contenedor-especias {
     width: 100%;
+    height: 80vh;
     padding: 40px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
-    overflow: hidden;
+   
 }
 
-.curcuma img{
-    width: 200px;
-    height: 200px;
+.contenedor-especias img {
+    position: relative;
+    width: 250px;
+    height: 250px;
     overflow: hidden;
+    background-size: cover;
+
 }
 
-.curcuma h3{
+.contenedor-especias h3 {
     font-size: 20px;
+    margin-top: 120px;
     text-align: center;
     color: rgb(233, 128, 42);
 }
 
-.curcuma h4{
+.contenedor-especias h4 {
     font-size: 16px;
     text-align: center;
-    color:#000;
-}
-
-
-.comino img{
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-}
-
-.comino h3{
-    font-size: 20px;
-    text-align: center;
-    color: rgb(233, 128, 42);
-}
-
-.comino h4{
-    font-size: 16px;
-    text-align: center;
-    color:#000;
-}
-
-
-.pimenton-dulce img{
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-}
-
-.pimenton-dulce h3{
-    font-size: 20px;
-    text-align: center;
-    color: rgb(233, 128, 42);
-}
-
-.pimenton-dulce h4{
-    font-size: 16px;
-    text-align: center;
-    color:#000;
-}
-
-
-.ajo-en-polvo img{
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-}
-
-.ajo-en-polvo h3{
-    font-size: 20px;
-    text-align: center;
-    color: rgb(233, 128, 42);
-}
-
-.ajo-en-polvo h4{
-    font-size: 16px;
-    text-align: center;
-    color:#000;
+    color: #000;
 }

@@ -5,26 +5,17 @@
     font-family: "Poppins", sans-serif;
 }
 
-.productos-cereales{
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    padding: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.cereales  h2{
+.productos-cereales {
     width: 100%;
     height: 10vh;
-    margin-bottom: 5px;
+    padding: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+}
+
+.cereales h2 {
+    margin-top: 40px;
     font-size: 60px;
     text-shadow: 3px 3px 1px rgb(233, 128, 42);
     letter-spacing: 10px;
@@ -33,86 +24,33 @@
 
 .contenedor-cereales {
     width: 100%;
+    height: 80vh;
     padding: 40px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
-    overflow: hidden;
+   
 }
 
-.arroz-blanco img{
-    width: 200px;
-    height: 200px;
+.contenedor-cereales img {
+    position: relative;
+    width: 250px;
+    height: 250px;
     overflow: hidden;
+    background-size: cover;
+
 }
 
-.arroz-blanco h3{
+.contenedor-cereales h3 {
     font-size: 20px;
+    margin-top: 120px;
     text-align: center;
     color: rgb(233, 128, 42);
 }
 
-.arroz-blanco h4{
+.contenedor-cereales h4 {
     font-size: 16px;
     text-align: center;
-    color:#000;
-}
-
-
-.arroz-integral img{
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-}
-
-.arroz-integral h3{
-    font-size: 20px;
-    text-align: center;
-    color: rgb(233, 128, 42);
-}
-
-.arroz-integral h4{
-    font-size: 16px;
-    text-align: center;
-    color:#000;
-}
-
-
-.fideo-sin-huevo img{
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-}
-
-.fideo-sin-huevo h3{
-    font-size: 20px;
-    text-align: center;
-    color: rgb(233, 128, 42);
-}
-
-.fideo-sin-huevo h4{
-    font-size: 16px;
-    text-align: center;
-    color:#000;
-}
-
-
-.fideo-con-huevo img{
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-}
-
-.fideo-con-huevo h3{
-    font-size: 20px;
-    text-align: center;
-    color: rgb(233, 128, 42);
-}
-
-.fideo-con-huevo h4{
-    font-size: 16px;
-    text-align: center;
-    color:#000;
+    color: #000;
 }
