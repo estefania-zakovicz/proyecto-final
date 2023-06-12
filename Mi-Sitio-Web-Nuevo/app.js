@@ -8,6 +8,7 @@ require('dotenv').config();
 var session = require('express-session');
 var indexRouter = require('./routes/index');
 var cerealesRouter = require('./routes/cereales'); //cereales.js
+var barritasRouter = require('./routes/barritas'); 
 var loginRouter = require('./routes/admin/login');
 var adminRouter = require('./routes/admin/novedades');
 
@@ -47,11 +48,12 @@ secured = async (req, res, next) => {
 
 app.use('/', indexRouter);
 app.use('/cereales', cerealesRouter);
+app.use('/barritas', barritasRouter);
 app.use('/admin/login', loginRouter);
 app.use('/admin/novedades', secured, adminRouter);
 
 
-
+//RENDER DE PRODUCTOS
 app.get('/cereales', function (req, res) {
   res.render ('cereales')
 
@@ -96,7 +98,36 @@ app.get('/semillas', function (req, res) {
   res.render ('semillas')
 
 })
+//RENDER DE RECETAS
+app.get('/barritas', function (req, res) {
+  res.render ('barritas')
 
+})
+
+app.get('/fajitas', function (req, res) {
+  res.render ('fajitas')
+
+})
+
+app.get('/hummus', function (req, res) {
+  res.render ('hummus')
+
+})
+
+app.get('/tepache', function (req, res) {
+  res.render ('tepache')
+
+})
+
+app.get('/bebidas', function (req, res) {
+  res.render ('bebidas')
+
+})
+
+app.get('/pan', function (req, res) {
+  res.render ('pan')
+
+})
 
 
 // catch 404 and forward to error handler

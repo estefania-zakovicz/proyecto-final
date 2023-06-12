@@ -179,7 +179,7 @@ a {
 }
 
 .contenedor-productos h2 {
-    font-size: 50px;
+    font-size: 60px;
     text-shadow: 3px 3px 1px rgb(233, 128, 42);
     letter-spacing: 10px;
     color: #000;
@@ -287,7 +287,7 @@ img {
 
 .main-section h2 {
     color: #000;
-    font-size: 40px;
+    font-size: 60px;
     text-shadow: 2px 2px 1px rgb(233, 128, 42);
     margin-bottom: 50px;
 
@@ -373,26 +373,17 @@ img {
 
 .contenedor-recetas {
     width: 100%;
-    height: 90vh;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.recetas {
-    width: 100%;
     height: 10vh;
+    padding: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 .recetas h2 {
-    font-size: 50px;
+    margin-top: 10px;
+    font-size: 60px;
     text-shadow: 3px 3px 1px rgb(233, 128, 42);
     letter-spacing: 10px;
     color: #000;
@@ -400,34 +391,32 @@ img {
 
 .recetas-carousel {
     width: 100%;
-    height: 200px;
+    height: 60vh;
+    padding: 40px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-
 
 .receta-item {
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* transition: all 0.5s ease-in-out; */
+    transition: all 0.5s ease-in-out;
     cursor: pointer;
     padding: 10px;
-    justify-content: space-between;
     margin-bottom: 10%;
 }
 
 
-.receta-img {
+.recetas-carousel img {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height: 200px;
     cursor: pointer;
     justify-content: space-between;
-
 }
 
 .receta-img:hover {
@@ -436,10 +425,10 @@ img {
 }
 
 .recetas-carousel .receta-titulo {
-    padding-left: 50px;
+    margin-left: 50px;
     font-size: 1.5rem;
-    color: rgb(233, 128, 42);
-    text-shadow: 1px 1px #000;
+    color: #000;
+    text-shadow: 2px 2px rgb(233, 128, 42);
 }
 
 /*FIN 4TA PÁGINA*/
@@ -473,7 +462,7 @@ img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 60px;
     text-shadow: 3px 3px 1px rgb(233, 128, 42);
     letter-spacing: 10px;
     color: #000;
