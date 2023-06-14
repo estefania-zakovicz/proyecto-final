@@ -10,7 +10,7 @@ var indexRouter = require('./routes/index');
 var cerealesRouter = require('./routes/cereales'); //cereales.js
 var barritasRouter = require('./routes/barritas'); 
 var loginRouter = require('./routes/admin/login');
-var adminRouter = require('./routes/admin/novedades');
+var adminRouter = require('./routes/admin/consejos');
 
 
 var app = express();
@@ -50,7 +50,7 @@ app.use('/', indexRouter);
 app.use('/cereales', cerealesRouter);
 app.use('/barritas', barritasRouter);
 app.use('/admin/login', loginRouter);
-app.use('/admin/novedades', secured, adminRouter);
+app.use('/admin/consejos', secured, adminRouter);
 
 
 //RENDER DE PRODUCTOS

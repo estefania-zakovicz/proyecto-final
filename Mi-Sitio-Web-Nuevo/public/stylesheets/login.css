@@ -19,7 +19,7 @@
     padding-top: 0;
 }
 
-.container a{
+.container .barra-login {
     font-size: 25px;
     color: white;
     text-decoration: none;

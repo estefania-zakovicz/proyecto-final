@@ -28,7 +28,7 @@ router.get('/', function (req, res, next) {
         if (data != undefined) {
             req.session.id_usuario = data.id; //id > nombre de la columna
             req.session.nombre = data.usuario;
-            res.redirect('/admin/novedades');
+            res.redirect('/admin/consejos');
         } else {
             res.render('admin/login', {
                 layout: 'admin/layout',
