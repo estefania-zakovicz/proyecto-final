@@ -188,26 +188,28 @@
 
 
 
-
-
 <!-- INICIO 5TA PÁGINA: CONSEJOS NUTRICIONALES -->
-<div class="consejos-nutricionales" id="consejos">
+<div class="consejos-nutricionales" id="consejos-nut">
     <h2>Consejos Nutricionales</h2>
 </div>
 
-    <div class="consejos">
-        <div class="consejos-1">
+<div class="consejos">
+        <div class="consejos-1" id="consejos">
             <h3>Reemplazos</h3>
             <h3>del huevo</h3>
-            <img src="/images/reemplazo-huevo.png" alt="Reemplazos del huevo">
+             {{#each consejos}}
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modal{{id}}">
+            <img src="/images/reemplazo-huevo.png">{{titulo}}</a>
+            {{/each}}
         </div>
-
+      
         <div class="consejos-2">
             <h3>Reemplazos</h3>
             <h3>de carne animal</h3>
             <img src="/images/reemplazo-carne.jpg" alt="Reemplazos de carne animal">
         </div>
 
+        
         <div class="consejos-3">
             <h3>Reemplazos</h3>
             <h3>de queso animal</h3>
@@ -216,7 +218,23 @@
     </div>
 <!-- FIN 5TA PÁGINA -->
 
-
+{{#each consejos}}
+<div class="modal fade" id="modal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel">{{titulo}}</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+</button>
+            </div>
+            <div class="modal-body">
+                <h4>{{subtitulo}}</h4>
+                <p>{{cuerpo}}</p>
+            </div>
+        </div>
+    </div>
+{{/each}}
+</div>
 
 
 

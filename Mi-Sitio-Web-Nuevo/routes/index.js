@@ -1,10 +1,16 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
+var consejosModel = require('../models/consejosModel');
 
 /* GET home page. */
-router.get('/', function (req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get('/', async function (req, res, next) {
+
+  var consejos = await consejosModel.getConsejos()
+
+  res.render('index', { 
+    consejos
+});
 });
 
 router.post('/', async (req, res, next) => {
