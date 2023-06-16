@@ -5,9 +5,8 @@ var consejosModel = require('../models/consejosModel');
 
 /* GET home page. */
 router.get('/', async function (req, res, next) {
-
-  var consejos = await consejosModel.getConsejos()
-
+  consejos = await consejosModel.getConsejos();
+  consejos = consejos.splice(0,5);
   res.render('index', { 
     consejos
 });

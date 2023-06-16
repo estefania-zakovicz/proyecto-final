@@ -7,7 +7,7 @@ async function getConsejos() {
     return rows;
 }
 
-async function deleteConsejosByTd(id) {
+async function deleteConsejosById(id) {
     var query = 'delete from consejos where id = ?';
     var rows = await pool.query(query, [id]);
     return rows;
@@ -43,4 +43,4 @@ async function modificarConsejoById(obj, id) {
 
 
 
-module.exports = { getConsejos, deleteConsejosByTd , insertConsejo, getConsejoById, modificarConsejoById }
+module.exports = { getConsejos, deleteConsejosById , insertConsejo, getConsejoById, modificarConsejoById }

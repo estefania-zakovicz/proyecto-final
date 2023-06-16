@@ -14,7 +14,7 @@ router.get('/', async function (req, res, next) {
 
   /*Para eliminar un consejo */
   router.get('/eliminar/:id', async(req, res, next) => {
-    const id = req.params.id;
+    var id = req.params.id;
     await consejosModel.deleteConsejosById(id);
     res.redirect('/admin/consejos')
   }); //cierra get de eliminar
