@@ -5,7 +5,6 @@ var consejosModel = require('../../models/consejosModel')
 router.get('/', async function (req, res, next) {
   
     var consejos = await consejosModel.getConsejos();
-
     res.render('admin/consejos', {
         layout:'admin/layout',
         persona: req.session.nombre, consejos
@@ -15,7 +14,7 @@ router.get('/', async function (req, res, next) {
   /*Para eliminar un consejo */
   router.get('/eliminar/:id', async(req, res, next) => {
     var id = req.params.id;
-    await consejosModel.deleteConsejosById(id);
+    await consejosModel.deleteConsejoById(id);
     res.redirect('/admin/consejos')
   }); //cierra get de eliminar
 
@@ -25,7 +24,7 @@ router.get('/', async function (req, res, next) {
 router.get('/agregar', (req, res, next) => {
   res.render('admin/agregar', {
     layout: 'admin/layout'
-  }) //cierra render
+  }); //cierra render
 }); //cierra Get
 
 /*agregar metodo post> insert*/
@@ -47,9 +46,9 @@ router.post('/agregar', async (req, res, next) => {
     layout: 'admin/layout',
     error: true,
     message: 'No se cargó el consejo'
-   })
+   });
 }
-})
+});
 
 /* Para que me muestre el diseño del modificar con los datos de un solo consejo*/
 router.get('/modificar/:id', async (req, res, next) => {

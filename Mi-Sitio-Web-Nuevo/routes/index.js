@@ -7,7 +7,7 @@ var consejosModel = require('../models/consejosModel');
 router.get('/', async function (req, res, next) {
   consejos = await consejosModel.getConsejos();
   consejos = consejos.splice(0,5);
-  res.render('index', { 
+  res.render('index',{ 
     consejos
 });
 });
