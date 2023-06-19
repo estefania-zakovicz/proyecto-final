@@ -192,56 +192,44 @@
 
 
 
-
 <!-- INICIO 5TA PÁGINA: CONSEJOS NUTRICIONALES -->
 <div class="consejos-nutricionales" id="consejos-nut">
     <h2>Consejos Nutricionales</h2>
 </div>
-
-<div class="consejos">
+<div class="consejos" class="row py-4">
     <div class="consejos-1" id="consejos">
-        <h3>Reemplazos</h3>
-        <h3>del huevo</h3>
-        {{#each consejos}}
-        <a href="#" data-bs-toggle="modal" data-bs-target="#modal{{id}}">
-            <img src="/images/reemplazo-huevo.png">{{titulo}}</a>
-        {{/each}}
+            {{#each consejos}}           
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal{{id}}" 
+                    >{{titulo}}                    
+                </a>        
+            {{/each}}
     </div>
+    {{#each consejos}}
 
-    <div class="consejos-2">
-        <h3>Reemplazos</h3>
-        <h3>de carne animal</h3>
-        <img src="/images/reemplazo-carne.jpg" alt="Reemplazos de carne animal">
-    </div>
-
-
-    <div class="consejos-3">
-        <h3>Reemplazos</h3>
-        <h3>de queso animal</h3>
-        <img src="/images/reemplazo-queso.jpg" alt="Reemplazos de queso animal">
-    </div>
-</div>
-<!-- FIN 5TA PÁGINA -->
-
-{{#each consejos}}
-<div class="modal fade" id="modal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title" id="exampleModalLabel">{{titulo}}</h2>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                        aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <h4>{{subtitulo}}</h4>
-                <p>{{cuerpo}}</p>
+    <!--inicia modal-->
+    <div class="modal fade" id="modal{{id}}" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdroplabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdroplabel">{{titulo}}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2>{{ subtitulo }}</h2>
+                    <p>{{ cuerpo }}</p>
+                </div>
             </div>
         </div>
     </div>
+    <!-- fin modal -->
     {{/each}}
 </div>
 
+
+<!-- FIN 5TA PÁGINA -->
 
 
 
