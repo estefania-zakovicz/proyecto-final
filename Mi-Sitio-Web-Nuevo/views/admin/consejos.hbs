@@ -4,7 +4,7 @@
         <div class="col">
             <p class="text-end">
                 <span>Hola {{persona}}!</span>
-                <a href="/admin/login/logout" class="btn btn-danger">Cerrar sesión <i
+                <a href="/admin/login/logout" class="btn btn-danger">Cerrar sesión<i
                         class="fas fa-sign-out-alt"></i></a>
             </p>
         </div>
@@ -30,6 +30,7 @@
                     <tr class="table-dark">
                         <th scope="col">#</th>
                         <th scope="col">Titulo</th>
+                        <th scope="col">Imagen</th>
                         <th scope="col" class="text-end">Acciones</th>
                     </tr>
                 </thead>
@@ -38,14 +39,22 @@
                     <tr>
                         <th scope="row">{{id}}</th>
                         <td>{{titulo}}</td>
+                        <td>{{{imagen}}}</td>
                         <td class="text-end">
-                            <a href="/admin/consejos/modificar/{{id}}" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i> </a>
-                            <a href="/admin/consejos/eliminar/{{id}}" class="btn btn-secondary"><i class="fas fa-trash"></i></a>
+                            <a href="/admin/consejos/modificar/{{id}}" class="btn btn-secondary"><i
+                                    class="fas fa-pencil-alt"></i></a>
+                            <a href="/admin/consejos/eliminar/{{id}}" class="btn btn-secondary"><i
+                                    class="fas fa-trash"></i></a>
                         </td>
                     </tr>
                     {{/each}}
                 </tbody>
             </table>
+            {{#if is_search}}
+            {{#unless novedades.length}}
+            No se encontraron resultados para "<b>{{q}}</b>"
+            {{/unless}}
+            {{/if}}
         </div>
     </div>
-</div> {{!-- container --}}
+</div> {{!-- fin container --}}

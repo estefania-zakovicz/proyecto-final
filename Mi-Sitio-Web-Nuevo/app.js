@@ -11,7 +11,7 @@ var cerealesRouter = require('./routes/cereales'); //cereales.js
 var barritasRouter = require('./routes/barritas'); 
 var loginRouter = require('./routes/admin/login');
 var adminRouter = require('./routes/admin/consejos');
-
+var fileUpload = require('express-fileupload');
 
 var app = express();
 
@@ -45,6 +45,10 @@ secured = async (req, res, next) => {
   }
 }
 
+app.use(fileUpload({
+  useTempFiles: true,
+  tempFileDir: '/tmp'
+}));
 
 app.use('/', indexRouter);
 app.use('/cereales', cerealesRouter);

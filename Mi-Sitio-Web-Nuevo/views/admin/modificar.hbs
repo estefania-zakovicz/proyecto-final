@@ -1,19 +1,27 @@
-<div class="container" style="margin: 100px 0">
+<div class="container" style="margin: 100px auto">
     <div class="row">
         <div class="col-6 offset-3">
             <h4>Modificar el consejo</h4>
-            <form action="/admin/consejos/modificar" method="post">
+            <form action="/admin/consejos/modificar" method="post" enctype="multipart/form-data">
                 <input type="hidden" value="{{consejo.id}}" name="id">
                 <div class="form-group">
-                    {{!-- <label for="">Titulo</label> --}}
                     <input type="text" placeholder="Titulo" class="form-control" name="titulo" value="{{consejo.titulo}}">
                 </div>
                 <div class="form-group">
-                    {{!-- <label for="">Subtitulo</label> --}}
                     <textarea placeholder="Subtitulo" class="form-control" name="subtitulo">{{consejo.subtitulo}}</textarea>
                 </div>
                 <div class="form-group">
                     <textarea placeholder="Cuerpo" class="form-control" name="cuerpo">{{consejo.cuerpo}}</textarea>
+                </div>
+                <div class="form-group">
+                    <p>
+                        <label>Imagen: <input type="file" name="imagen" id="imagen" /></label>
+                    </p>
+                    <p>
+                        <label><input type="checkbox" name="img_delete" id="img_delete" value="1">Eliminar imagen
+                            actual</label>
+                        <input type="hidden" name="img_original" value="{{consejo.img_id}}">
+                    </p>
                 </div>
                 <button type="submit" class="btn btn-primary">Modificar</button>
             </form>
