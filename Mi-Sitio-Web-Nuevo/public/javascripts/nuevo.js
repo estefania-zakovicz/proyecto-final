@@ -27,5 +27,3 @@ navCloseBtn.addEventListener("click", () => {
 
 //FIN NAVEGACIÓN
 
-
-

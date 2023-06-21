@@ -3,11 +3,7 @@
     <div class="content">
         <h1>Granel de Sabores</h1>
         <p>De la tierra, a tu mesa</p>
-    </div>
-
-    {{!-- <div class="promocion">
-        <img src="/images/30-Off-PNG-Photo.png" alt="30% off">
-    </div> --}}
+    </div>    
 </section>
 
 <!-- FIN 1ER PÁGINA -->
@@ -137,6 +133,7 @@
 
 
 <!-- INICIO 4TA PÁGINA: RECETAS-->
+<div class="fondo">
 <div class="contenedor-recetas" id="recetas">
     <div class="recetas">
         <h2>Recetas</h2>
@@ -186,7 +183,7 @@
         </div>
     </a>
 </div>
-
+</div>
 
 <!-- FIN 4TA PÁGINA -->
 
@@ -197,21 +194,22 @@
     <h2>Consejos Nutricionales</h2>
 </div>
 
-<!--inicio de consejos-->
-<div class="row my-3">
+<div class="consejos">
     {{#each consejos}}
     <div class="consejos-1" id="consejos">
         <h3>{{titulo}}</h3>
-        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal{{id}}">
-            {{titulo}}</a>
+
+        <a href="#" data-bs-toggle="modal" data-bs-target="#modal{{id}}">
+            <img src="{{{imagen}}}">{{titulo}}</a>
+
     </div>
     {{/each}}
-</div> <!-- cierra consejos -->
+</div>
 
 
-<!-- Modal -->
+
 {{#each consejos}}
-<div class="modal fade" id="exampleModal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -219,17 +217,19 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <h4>{{subtitulo}}</h4>
-                <p>{{cuerpo}}</p>
-
+                <h3>{{subtitulo}}</h3>
+                <div>
+                    <br>
+                    <p>{{cuerpo}}</p>
+                    <br>
+                </div>
+                
+                <img src="{{imagen}}">
             </div>
         </div>
     </div>
 </div>
 {{/each}}
-<!--Fin Modal -->
-
-
 <!-- FIN 5TA PÁGINA -->
 
 
