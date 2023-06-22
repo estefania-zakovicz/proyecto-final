@@ -10,7 +10,7 @@
 
 .nav-links img {
     border-radius: 50%;
-    left: 180px;
+    left: 60px;
     height: 50px;
 }
 
@@ -20,8 +20,9 @@
     left: 0;
     width: 100%;
     padding: 15px;
+    padding-right: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     background: #00050a;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     z-index: 100;
@@ -115,24 +116,31 @@ a {
     left: 10%;
     transform: translateY(-50%);
     color: #fff;
+    text-align: center;
 }
 
 .banner .content h1 {
     font-size: 80px;
     margin: 0;
     line-height: 1.2;
-    text-shadow: 7px 7px 3px #000;
+    text-shadow: px 6px 1px #fafafa;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo semitransparente para h1 */
+    padding: 10px 20px; /* Espacio alrededor del texto para h1 */
 }
 
 .banner .content p {
-    font-size: 50px;
-    margin: 0;
-    margin-top: 20px;
+    font-size: 60px;
+    margin-top: 0;
     line-height: 1.2;
-    color: #000;
-    font-weight: bold;
-    text-shadow: 6px 6px 1px #fafafa;
+    text-shadow:  4px 4px 2px #fff;
+    color: #000; 
+    background-color: none; /* Sin fondo semitransparente para p */
+    padding-top: 50px; /* Sin espacio alrededor del texto para p */
 }
+
 
 /*FIN DE BANNER*/
 
@@ -357,11 +365,12 @@ img {
 
 /*INICIO 4TA PÁGINA: RECETAS*/
 
-.fondo{
+.fondo {
     width: 100%;
     height: 100vh;
     background-image: url(/images/background-recetas.png);
 }
+
 .contenedor-recetas {
     width: 100%;
     height: 10vh;
@@ -384,7 +393,7 @@ img {
     width: 100%;
     height: 80vh;
     padding: 40px;
-   margin-top: 40px;
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -522,6 +531,12 @@ img {
     margin-right: 400px;
 }
 
+.separador-horizontal {
+    border: none;
+    border-top: 1px solid #000;
+    margin: 20px 0;
+  }
+  
 /* FIN 5TA PÁGINA */
 
 
@@ -531,76 +546,60 @@ img {
 /*INICIO 6TA PÁGINA: MAPA Y FORMULARIO*/
 
 
-.contenedor-7 {
-    width: 100%;
-    height: 90vh;
-    padding: 2rem;
-    overflow: hidden;
+.contacto {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 10vh;
 }
 
-.iframe h2 {
-    margin-bottom: 30px;
-    padding-left: 150px;
-    font-size: 40px;
+.contacto h2 {
+    padding-top: 30px;
+    font-size: 60px;
     text-shadow: 3px 3px 1px rgb(233, 128, 42);
     letter-spacing: 10px;
     color: #000;
 }
 
-.iframe {
+.formulario {
     width: 100%;
-    display: grid;
-    margin-left: 50px;
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    justify-content: space-between;
 }
 
+.iframe {
+    width: 400px;
+    height: 400px;
+}
 
-.form {
-    width: 100%;
-    height: auto;
-    background-color: #fff;
+.contact-form {
+    width: 750px;
+    height: 460px;
+    margin-top: 50px;
+    background-color: rgb(233, 128, 42);
     border-radius: 10px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     overflow: hidden;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-}
-
-.contact-form {
-    background-color: #1abc9c;
-    position: relative;
-    margin-right: 50px;
-}
-
-
-.contact-form:before {
-    content: "";
-    position: absolute;
-    width: 26px;
-    height: 26px;
-    background-color: #1abc9c;
-    transform: rotate(45deg);
-    top: 50px;
-    left: -13px;
-}
-
-form {
     padding: 2.3rem 2.2rem;
     z-index: 10;
     overflow: hidden;
-    position: relative;
+    padding-top: 20px;
 }
 
 .title {
     color: #fff;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 23px;
     line-height: 1;
-    margin-bottom: 0.7rem;
+    text-align: center;
 }
 
 .input-container {
@@ -630,8 +629,11 @@ textarea.input {
     overflow-y: auto;
 }
 
-.input-container label {
-    /* position: absolute; */
+.input::placeholder {
+    color: #fff;
+  }
+/* .input-container label {
+    position: absolute;
     top: 50%;
     left: 15px;
     transform: translateY(-50%);
@@ -647,7 +649,7 @@ textarea.input {
 .input-container.textarea label {
     top: 1rem;
     transform: translateY(0);
-}
+} */
 
 .boton {
     width: 20%;
@@ -655,7 +657,7 @@ textarea.input {
     background-color: #fff;
     border: 2px solid #fafafa;
     font-size: 0.95rem;
-    color: #1abc9c;
+    color: #030303;
     line-height: 1;
     border-radius: 25px;
     outline: none;
@@ -681,7 +683,7 @@ textarea.input {
     z-index: 500;
 }
 
-.input-container span:before,
+/* .input-container span:before,
 .input-container span:after {
     content: "";
     position: absolute;
@@ -692,17 +694,17 @@ textarea.input {
     background-color: #1abc9c;
     top: 50%;
     transform: translateY(-50%);
-}
+} */
 
-.input-container span:before {
+/* .input-container span:before {
     left: 50%;
 }
 
 .input-container span:after {
     right: 50%;
-}
+} */
 
-.input-container.focus label {
+/* .input-container.focus label {
     top: 0;
     transform: translateY(-50%);
     left: 25px;
@@ -713,7 +715,7 @@ textarea.input {
 .input-container.focus span:after {
     width: 50%;
     opacity: 1;
-}
+} */
 
 /*FIN 6TA PÁGINA*/
 
@@ -733,6 +735,7 @@ textarea.input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   padding-top: 15px;
+    padding-top: 15px;
 }
+
 /*FIN FOOTER*/

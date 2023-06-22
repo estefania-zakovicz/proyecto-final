@@ -3,7 +3,7 @@
     <div class="content">
         <h1>Granel de Sabores</h1>
         <p>De la tierra, a tu mesa</p>
-    </div>    
+    </div>
 </section>
 
 <!-- FIN 1ER PÁGINA -->
@@ -134,55 +134,55 @@
 
 <!-- INICIO 4TA PÁGINA: RECETAS-->
 <div class="fondo">
-<div class="contenedor-recetas" id="recetas">
-    <div class="recetas">
-        <h2>Recetas</h2>
+    <div class="contenedor-recetas" id="recetas">
+        <div class="recetas">
+            <h2>Recetas</h2>
+        </div>
     </div>
-</div>
 
-<div class="recetas-carousel">
-    <a href="/barritas">
-        <div class="receta-item active">
-            <img class="receta-img" src="images/barritas.jpg" alt="Receta Barritas">
-            <div class="receta-titulo">Barritas</div>
-        </div>
-    </a>
+    <div class="recetas-carousel">
+        <a href="/barritas">
+            <div class="receta-item active">
+                <img class="receta-img" src="images/barritas.jpg" alt="Receta Barritas">
+                <div class="receta-titulo">Barritas</div>
+            </div>
+        </a>
 
-    <a href="/fajitas">
-        <div class="receta-item">
-            <img class="receta-img" src="images/fajitas.jpg" alt="Receta Fajitas">
-            <div class="receta-titulo">Fajitas</div>
-        </div>
-    </a>
+        <a href="/fajitas">
+            <div class="receta-item">
+                <img class="receta-img" src="images/fajitas.jpg" alt="Receta Fajitas">
+                <div class="receta-titulo">Fajitas</div>
+            </div>
+        </a>
 
-    <a href="/hummus">
-        <div class="receta-item">
-            <img class="receta-img" src="images/hummus.jpg" alt="Receta Hummus">
-            <div class="receta-titulo">Hummus</div>
-        </div>
-    </a>
+        <a href="/hummus">
+            <div class="receta-item">
+                <img class="receta-img" src="images/hummus.jpg" alt="Receta Hummus">
+                <div class="receta-titulo">Hummus</div>
+            </div>
+        </a>
 
-    <a href="/tepache">
-        <div class="receta-item">
-            <img class="receta-img" src="images/tepache.jpg" alt="Receta Tepache">
-            <div class="receta-titulo">Tepache</div>
-        </div>
-    </a>
+        <a href="/tepache">
+            <div class="receta-item">
+                <img class="receta-img" src="images/tepache.jpg" alt="Receta Tepache">
+                <div class="receta-titulo">Tepache</div>
+            </div>
+        </a>
 
-    <a href="/bebidas">
-        <div class="receta-item">
-            <img class="receta-img" src="images/leches.jpg" alt="Receta Bebidas">
-            <div class="receta-titulo">Bebidas</div>
-        </div>
-    </a>
+        <a href="/bebidas">
+            <div class="receta-item">
+                <img class="receta-img" src="images/leches.jpg" alt="Receta Bebidas">
+                <div class="receta-titulo">Bebidas</div>
+            </div>
+        </a>
 
-    <a href="/pan">
-        <div class="receta-item">
-            <img class="receta-img" src="images/pan.jpg" alt="Receta Pan">
-            <div class="receta-titulo">Pan</div>
-        </div>
-    </a>
-</div>
+        <a href="/pan">
+            <div class="receta-item">
+                <img class="receta-img" src="images/pan.jpg" alt="Receta Pan">
+                <div class="receta-titulo">Pan</div>
+            </div>
+        </a>
+    </div>
 </div>
 
 <!-- FIN 4TA PÁGINA -->
@@ -205,7 +205,7 @@
     </div>
     {{/each}}
 </div>
-
+<hr class="separador-horizontal">
 
 
 {{#each consejos}}
@@ -223,22 +223,24 @@
                     <p>{{cuerpo}}</p>
                     <br>
                 </div>
-                
+
                 <img src="{{imagen}}">
             </div>
         </div>
     </div>
 </div>
 {{/each}}
+
 <!-- FIN 5TA PÁGINA -->
 
 
 
 <!--INICIO 6TA PÁGINA: Mapa y Formulario-->
-<div class="contenedor-7" id="contacto">
-
+<div class="contacto" id="contacto">
+    <h2>Contacto</h2>
+</div>
+<div class="formulario">
     <div class="iframe">
-        <h2>Contacto</h2>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14173.647003683816!2d-55.902453699999995!3d-27.362853449999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457bf8ae49856c1%3A0x5cb18155257d9c95!2sMonumento%20a%20Andresito%20Guacurar%C3%AD!5e0!3m2!1ses-419!2sar!4v1683073516040!5m2!1ses-419!2sar"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -249,30 +251,23 @@
         <form action="/" method="post">
             <h3 class="title">Para realizar un pedido, completá el siguiente formulario:
             </h3>
+            
             <div class="input-container">
-                <input type="text" name="nombre" class="input" id="nombre" />
-                <label for="nombre">Nombre</label>
-                <span>Nombre</span>
+                <input type="text" name="nombre" class="input" id="nombre" placeholder="Nombre completo" />
             </div>
             <div class="input-container">
-                <input type="email" name="email" class="input" id="email" />
-                <label for="email">Email</label>
-                <span>Email</span>
+                <input type="email" name="email" class="input" id="email" placeholder="Email" />
             </div>
             <div class="input-container">
-                <input type="tel" name="telefono" class="input" id="telefono" />
-                <label for="telefono">Teléfono</label>
-                <span>Teléfono</span>
+                <input type="tel" name="telefono" class="input" id="telefono" placeholder="Teléfono" />
             </div>
             <div class="input-container textarea">
-                <textarea name="mensaje" class="input" id="mesaje"></textarea>
-                <label for="mensaje">Mensaje</label>
-                <span>Mensaje</span>
+                <textarea name="mensaje" class="input" id="mesaje" placeholder="Mensaje"></textarea>
             </div>
             <input type="submit" value="Enviar" class="boton" />
             <p>{{message}}</p>
         </form>
-
     </div>
 </div>
+
 <!-- FIN 6TA PÁGINA -->
