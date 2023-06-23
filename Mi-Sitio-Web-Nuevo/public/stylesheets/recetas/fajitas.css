@@ -30,6 +30,14 @@
     justify-content: center;
     line-height: 25px;
 }
+.contenedor-fajitas img{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    border-radius: 90%;
+    margin-left: 350px;
+    margin-top: 50px;
+}
 
 .contenedor-fajitas h3{
     font-size: 20px;
