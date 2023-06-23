@@ -6,7 +6,7 @@ var cloudinary = require('cloudinary').v2;
 
 /* GET home page. */
 router.get('/', async function (req, res, next) {
-  consejos = await consejosModel.getConsejos();
+  var consejos = await consejosModel.getConsejos();
 
   consejos = consejos.splice(0,5); //seleccionamos los primeros 5 elementos del array
   consejos = consejos.map(consejo => {
@@ -36,6 +36,8 @@ router.get('/', async function (req, res, next) {
 
 router.post('/', async (req, res, next) => {
 
+  console.log(req.body) // estoy capturando los datos?
+  
   var nombre = req.body.nombre;
   var email = req.body.email;
   var telefono = req.body.telefono;

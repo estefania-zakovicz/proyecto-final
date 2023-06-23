@@ -6,12 +6,14 @@ var logger = require('morgan');
 
 require('dotenv').config();
 var session = require('express-session');
+var fileUpload = require('express-fileupload');
+
 var indexRouter = require('./routes/index');
 var cerealesRouter = require('./routes/cereales'); //cereales.js
 var barritasRouter = require('./routes/barritas'); 
 var loginRouter = require('./routes/admin/login');
 var adminRouter = require('./routes/admin/consejos');
-var fileUpload = require('express-fileupload');
+
 
 var app = express();
 
